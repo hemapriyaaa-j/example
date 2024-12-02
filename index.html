@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="loginForm">
+    <!-- Login Form -->
+    <h2 class="form-title">Login Form</h2>
+    <input type="email" id="loginEmail" placeholder="Email Address" required>
+    <span class="error-message" id="loginEmailError"></span>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <span class="error-message" id="loginPasswordError"></span>
+    <a href="#" class="forgot-password">Forgot password?</a>
+    <button type="button" class="btn" id="loginBtn">Login</button>
+    <p class="redirect-text">Not a member? <a href="#" id="signupLink">Signup now</a></p>
+  </div>
+ 
+  <div class="container" id="signupForm" style="display: none;">
+    <!-- Signup Form -->
+    <h2 class="form-title">Signup Form</h2>
+    <input type="text" id="signupUsername" placeholder="Username" required>
+    <span class="error-message" id="signupUsernameError"></span>
+    <input type="email" id="signupEmail" placeholder="Email Address" required>
+    <span class="error-message" id="signupEmailError"></span>
+    <input type="password" id="signupPassword" placeholder="Password" required>
+    <span class="error-message" id="signupPasswordError"></span>
+    <button type="button" class="btn" id="signupBtn">Signup</button>
+    <p class="redirect-text">Already a member? <a href="#" id="backToLoginLink">Login here</a></p>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
